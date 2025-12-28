@@ -8,6 +8,8 @@ services:
 
  application:
    image: shaikmustafa/mynewapp:appimage
+   deploy:
+     replicas: 2
    ports:
      - "1111:8080"
    depends_on:
